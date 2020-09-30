@@ -1,12 +1,12 @@
 <p align="center">
   <img width="556" height="112" src="src/gsoc.png">
   <img height="112" src="src/joomlalogo.png">
-</p>
+</p><hr>
 
 # GSoC-2019-Page-Builder-Work-Report
-Project Students - **Nitish Bahl** ([@bahl24](https://github.com/bahl24)) and **Franciska Perisa** ([@fancyFranci](https://github.com/fancyFranci))
+**Project Students** - **Nitish Bahl** ([@bahl24](https://github.com/bahl24)) and **Franciska Perisa** ([@fancyFranci](https://github.com/fancyFranci))
 <br>
-Project Mentors - **Benjamin Trenkle** ([@bembelimen](https://github.com/bembelimen)), **Viviana Menzel** ([@drmenzelit](https://github.com/drmenzelit)) and **Anurag Kumar** ([@Anu1601CS](https://github.com/Anu1601CS))
+**Project Mentors** - **Benjamin Trenkle** ([@bembelimen](https://github.com/bembelimen)), **Viviana Menzel** ([@drmenzelit](https://github.com/drmenzelit)) and **Anurag Kumar** ([@Anu1601CS](https://github.com/Anu1601CS))
 <br>
 <br>
 **Project Repository Link:** https://github.com/joomla-projects/gsoc19_page-builder/tree/editor
@@ -16,6 +16,8 @@ Project Mentors - **Benjamin Trenkle** ([@bembelimen](https://github.com/bembeli
 **Blog Posts** - [Post1](https://community.joomla.org/gsoc-2019/gsoc-project-page-builder-first-coding-phase.html) [Post2](https://community.joomla.org/gsoc-2019/gsoc-project-page-builder-second-coding-phase.html)
 <br>
 **Project Documentation** - [JDocs](https://docs.joomla.org/J4.x:Page_Builder)
+<hr>
+
 
 ## Objective
 
@@ -43,17 +45,17 @@ Users can add different elements to the layout by using the "Add Element" button
   Add elements to the layout
 </p>
 
-It is possible to add custom CSS classes using the settings icon, present on every element and here users can also add offsets to columns and select name and module chrome for each module position. Plugins are able to offer their own options for the sidebar. The output is a JSON object stored in the parameter field with the type, options, size and children of every element. The editor loads automatically the saved layout from the parameter so that the user can directly continue editing.
+It is possible to add custom CSS classes using the settings icon,present on every element and here users can also add offsets to columns and select name and module chrome for each module position. Plugins are able to offer their own options for the sidebar. The output is a JSON object stored in the parameter field with the type, options, size and children of every element. The editor loads automatically the saved layout from the parameter so that the user can directly continue editing.
 
 ### Elements
 
-There are four default elements provided with the Page Builder
+There are four default elements provided with the Page Builder:-
 1. Container
 2. Grid
 3. Column
 4. Module Position
 
-Existing elements can be modified and additional elements can be added via plugins. A plugin can configure the element and give the structure where it should be available in the editor. For example, it can be only available as root item. When the developer does not want that the element includes others (except module position), the attribute ‘children’ should just be set to ‘false’. The same is possible for parent elements. This way it is not a problem for 3rd party developers to include and customise new elements which are not part of the core functionality. For now, there are some default elements (which can be deactivated) - containers (like Bootstrap containers, elements which set the content in the middle of the page), grids, columns and module positions.
+Existing elements can be modified and additional elements can be added via plugins. A plugin can configure the element and give the structure where it should be available in the editor. For example, it can be only available as root items. When the developer does not want that the element includes others (except module position), the attribute ‘children’ should just be set to ‘False’. The same is possible for parent elements. This way it is not a problem for 3rd party developers to include and customise new elements which are not part of the core functionality. For now, there are some default elements (which can be deactivated) - containers (like Bootstrap containers, elements which set the content in the middle of the page), grids, columns and module positions.
 
 ### Apodis
 
